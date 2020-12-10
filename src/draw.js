@@ -79,7 +79,7 @@ class Draw {
         }
       }
 
-      const isTempFile = /^wxfile:\/\//.test(img)
+      const isTempFile = /^wxfile:\/\/||^data:image\/png;base64,/.test(img)
       const isNetworkFile = /^https?:\/\//.test(img)
 
       if (isTempFile) {
